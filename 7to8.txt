@@ -1,0 +1,17 @@
+xml:
+<form string="ABC" version="7.0"></form> to <form string="ABC"></form>
+
+python:
+-        'code': fields.char('Reference', select=True, track_visibility='onchange'),
++        'code': fields.char('Reference', select=True, track_visibility='onchange', copy=False),
+
+xml:
+options="{'no_create': True, 'no_open': True}"/>
+no_create: do not create in this line
+no_open: do not open from view
+fold_field: 'fold' --> fold statusbar
+
+
+
+
+
